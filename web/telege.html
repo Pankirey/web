@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Telegram</title>
+		<style>
+			body{
+				background-color:#D3D3D3;
+				font: 13px/18px Tahoma,sans-serif,Arial,Helvetica;
+				color: #808080;
+			}
+			.header{
+				width:auto;
+				height:226px;
+				background-color:#5682a3;
+				margin-left:-8px;
+				margin-right:-8px;
+				margin-top: -8px;
+
+			}
+			.login{
+				width: 404px;
+				height:415px;
+				border-radius: 5px;
+				margin-right:auto;
+				margin-left:auto;
+				margin-top: -131px;
+				background-color:#ffffff;
+			}
+			.loginheader{
+	
+				height:75px;
+				background-color:#5682a3;
+			}
+			.bottom{
+				text-align:center;
+				color: #84a2bc;
+				margin-top: 25px;
+				font-size:13px;
+				line-height: 16px;
+			}
+			.loginform{
+				padding: 44px 65px;
+				font:Arial;
+				border-radius: 10px;
+
+			}
+			.logolink{
+				width: 140px;
+				height: 75px;
+			}
+			.loginsubmit{
+				margin-left: 344px;
+				margin-top: -75px;
+
+			}
+			#subm{
+				height: 75px;
+				background-color:#5682a3;
+				border-color:#5682a3;
+				border-radius: 5px;
+				color:#ffffff;
+				font-size: 15px;
+				cursor: pointer;
+
+				border-style: solid;
+
+			}
+			#hhh{
+				color: #000000;
+				font-family: Arial;
+				font-weight: 23px;
+			}
+			.input{
+				border: 0;
+			}
+			hr{
+				border:none;
+ 				border-top:1px dotted #808080;
+  				color:#fff;
+  				height:1px;
+  				width:100%;
+			}
+			.code{
+				height: 50px;
+				width:  50px;
+			}
+			.phone{
+				height: 50px;
+				width: 189px;
+				margin-top: -50px;
+				margin-left: 85px;
+			}
+	
+
+
+
+
+
+		</style>
+	</head>
+	<body>
+		<div class="header"> </div>
+		<div class="login">
+		<div class="loginheader">
+			<div class="logolink"><img src="teleg.PNG" height="75"></div>
+			<div class="loginsubmit" >
+				<form action="https://web.telegram.org/#/login">
+				<input type="submit" value="Next >" id="subm">
+				</form>
+			</div>
+		</div>
+		<div class="loginform"><h3 id="hhh">Sign In</h3>	
+			<p>Please choose your country and enter your full phone number.</p>
+			<label>Country</label>
+			<br>
+			<input type="country" value="Kazakhstan" class="input">
+			<hr>
+			<br>
+		<div class="code">
+			<label>Code</label>
+			<br>
+			<input type="text" class="input" value="+7 7">
+			<hr>
+		</div>
+		<div class="phone">
+			<label class="phonelabel">Phone Number</label>
+			<br>
+			<input type="phone" class="input" required >
+			<hr>
+		</div>
+			
+		</div>
+		</div>
+		<div class="bottom">
+		<p>Welcome to the nonofficial Telegram web-client.</p>
+		<p>Learn more</p>
+	</div>
+	</body>
+</html> 

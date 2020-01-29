@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Facebook</title>
+	<style>
+		body{
+			background-color: #e9ecf4;
+		}
+
+		.header{
+			width: auto;
+			height: 82.8px;
+			background-color: #3c5a99;
+			margin-top: -8px;
+			margin-left: -8px;
+			margin-right: -8px;
+		}
+		.logform{
+			margin-left: 269px;
+			width: 980px;
+			padding-top: 13px;
+			width: 980px;
+			margin-top: -90px;
+		}
+		#facebooklogo{
+			margin-top: 2px;
+			margin-left: -10px;
+		}
+		.loginform{
+			width: 461.4px;
+			height: 65px;
+			float: right;
+			padding-left: 14px;
+			padding-top: 13px;
+		}
+		.label1{
+			font-size: 12px;
+			color: #ffffff;
+			font-family: arial;
+		}
+		#input{
+			margin-top: 18px;
+			border-radius: 2px;
+			color: #ffffff;
+			background-color: #4267b2;
+			border-color: #29487d;
+			border-style: solid;
+			border-width: 1px;
+			height: 22px;
+			cursor: pointer; 
+		}
+		#forgot{
+			position: absolute;
+			font-size: 12px;
+			color: #A9A9A9;
+			font-family: arial;
+			margin-left: 1025px;
+			margin-top: -12px;
+
+		}
+		.regis{
+			font-size: 35px;
+			font-family: arial;
+			padding-left: 60px;
+			padding-top: 30px;
+			font-weight: 600;
+		}
+		.registrat{
+			font-size: 19px;
+			font-weight: normal;
+			font-family: arial;
+			padding-left: 60px;
+			padding-top: 10px;
+		}
+		.inputs{
+			padding-left: 60px;	
+			padding-top: 10px;
+		}
+		#phonepas{
+			width: 410px;
+			height: 38.4px;
+			border-radius: 6px;
+			font-family: arial;
+			border-style: solid;
+			padding-left: 8px;
+			font-size: 18px;
+			color: #808080;
+			border-color: #bdc7d8;
+			border: 1px solid;
+		}
+		#namesurname{
+			width: 194px;
+			height: 38.4px;
+			border-radius: 6px;
+			font-family: arial;
+			border-style: solid;
+			padding-left: 8px;
+			font-size: 18px;
+			color: #808080;
+			border-color: #bdc7d8;
+			border: 1px solid;
+		}
+		.dateofbirth{
+			padding-left: 60px;
+			font-family: arial;
+			margin-top: 10px;
+		}
+		.label   {
+			font-size: 16px;
+			font-weight: bold;
+			color: #90949c;
+
+		}
+		#birthtable{
+			margin-top: 5px;
+		}
+		select{
+			padding: 5px;
+			height: 30px;
+			font-size: 13px;
+			color: #1c1e21;
+			border: 1px solid #ccd0d5;
+		}
+		#sign{
+			margin-bottom: -5px;
+		}
+		#sex{
+			margin-top: 15px;
+	
+		}
+		.sexchoice{
+			margin-top: 5px;
+		}
+		.rights{
+			width: 399px;
+			color: #777;
+			font-size: 11px;
+			width: 316px;
+		}
+		.linkrights{
+			color:#385898;
+			text-decoration: none;
+		}
+		.regbutton{
+			min-width: 194px;
+			padding: 7px 20px;
+			font-size: 19px;
+			font-weight: bold;
+			color: #fff;
+			line-height: 126%;
+			background: linear-gradient(#67ae55, #578843);
+			box-shadow: inset 0 1px 1px #a4e388;
+			border-color: #3b6e22 #3b6e22 #2c5115;
+			border: 1px solid;
+			border-radius: 5px;
+			cursor: pointer;
+			display: inline-block;
+			letter-spacing: 1px;
+			position: relative;
+			text-shadow: 0 1px 2px rgba(0,0,0.5);
+			margin-bottom: 10px;
+			margin-top: 10px;
+		}
+		.createpage{
+			font-size: 13px;
+			color: #666;
+			font-weight: bold;
+			margin-top: 10px;
+			padding-top: 15px;
+		}
+		#crpage{
+			text-decoration: none;
+			color: #385898;
+		}
+		.imagepeople{
+			width: 565px;
+			color: #0e385f;
+			font-size: 20px;
+			font-weight: bold;
+			font-family: arial;
+			line-height: 29px;
+			margin-top: 40px;
+			word-spacing: -1px;
+			margin-left: 260px;
+		}
+		.imgg{
+			width: 565px;
+			height: 194px;	
+		}
+		.footer{
+			margin-top: 280px;
+			width: auto;
+			height: 180px;
+			background-color: #fff;
+			margin-left: -8px;
+			margin-right: -8px;
+			margin-bottom: -8px;
+		}
+		.pagefooter{
+			width: 980px;
+			margin-left: 280px;
+			color: #737373;
+		}
+		.dif{
+			align-items: center;
+			display: flex;
+			flex-wrap: wrap;
+			padding-top: 8px;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			padding-right: 0px;
+			padding-left: 0
+			font-size: 12px;
+			direction: ltr;
+			line-height: 1.34;
+			font-family: arial;
+			text-decoration: none;
+			color:#385898;
+		}
+		li{
+			border-width: 0 0 0 1px;
+			font-size: 12px;
+			color: #737373;
+			direction: ltr;
+			line-height: 1.34;	
+			padding-left: 10px;
+			display:inline-block;
+			margin-top: 8px;
+		}
+		#plus{
+			width: 10px;
+			height: 17px;
+			font-size: 16px;
+			color: #4b4f56;
+			font-family: arial;
+			border-color: #ccd0d5;
+			border:1px solid;
+			border-radius: 2px;
+			box-sizing: content-box;
+			padding: 0 8px;
+			display: inline-block;	
+			border-width: .5 .5 .5 .5px;
+			cursor: pointer;	 
+		}
+		hr{
+			border:none;
+ 				border-top:1px dotted #808080;
+  				color:#fff;
+  				height:1px;
+  				width:100%;
+		}
+		#faceb{
+			font-family: arial;
+			font-size: 11px;
+			margin-left: 10px;
+		}
+		#qwe{
+			color: #C0C0C0;
+			text-decoration: none;
+		}
+
+	</style>
+</head>
+	<body>
+		<div class=header>
+		</div>
+		<form>
+			<div class="logform">
+				<img src="newsWorld_22072014_530_ebdfb749e6dc5f6ab02802d9786a36c0.jpg" width="185" height="65" id="facebooklogo">
+				<div class="loginform">
+					<table border="0" cellspacing="5">
+						<tr>
+							<td class="td">
+				<label class="label1">Электронный адрес или номер телефона</label>
+				<br>
+				<input type="email" name="">
+			</td>
+			<td class="td">
+				<label class="label1">Пароль</label>
+				<br>
+				<input type="password" name="">
+			</td>
+			<td class="td">
+				<input type="submit" name="" value="Вход" id="input">
+			</td>
+		</tr>
+				</table>
+				<div class="regis">Регистрация</div>
+				<div class="registrat">Быстро и легко</div>
+				<div class="inputs">
+					<table cellspacing="5">
+						<tr>
+							<td>
+								<input type="text" name="" placeholder="Имя" id="namesurname">
+							</td>
+							<td>
+								<input type="text" name="" placeholder="Фамилия" id="namesurname">
+							</td>
+													</tr>
+						<tr>
+							<td colspan="2"> 
+								<input type="text" name="" placeholder="Номер мобильного телефона или эл. адрес" id="phonepas">
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"> 
+								<input type="password" name="" placeholder="Новый пароль" id="phonepas">
+							</td>
+						</tr>
+					</table>
+				</div>
+					<div class="dateofbirth">
+					<label class="label">Дата рождения</label>
+					<br>
+					<table id="birthtable">
+						<tr>
+							<td>
+					<select id="day" title="День">
+						<option value="0">День</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+						<option value="21">21</option>
+						<option value="22">22</option>
+						<option value="23">23</option>
+						<option value="24">24</option>
+						<option value="25">25</option>
+						<option value="26">26</option>
+						<option value="27">27</option>
+						<option value="28">28</option>
+						<option value="29">29</option>
+						<option value="30">30</option>
+						<option value="31">31</option>
+					</select>
+				</td>
+				<td>
+					<select id="month" title="Месяц">
+						<option value="0">Месяц</option>
+						<option value="1">янв</option>
+						<option value="2">фев</option>
+						<option value="3">мар</option>
+						<option value="4">апр</option>
+						<option value="5">май</option>
+						<option value="6">июн</option>
+						<option value="7">июл</option>
+						<option value="8">авг</option>
+						<option value="9">сен</option>
+						<option value="10">окт</option>
+						<option value="11">ноя</option>
+						<option value="12">дек</option>
+					</select>
+				</td>
+				<td>
+					<select id="year" title="Год">
+						<option value="0">Год</option>
+						<option value="1">2020</option>
+						<option value="2">2019</option>
+						<option value="3">2018</option>
+						<option value="4">2017</option>
+						<option value="5">2016</option>
+						<option value="6">2015</option>
+						<option value="7">2014</option>
+						<option value="8">2013</option>
+						<option value="9">2012</option>
+						<option value="10">2011</option>
+						<option value="11">2010</option>
+						<option value="12">2009</option>
+						<option value="13">2008</option>
+						<option value="14">2007</option>
+						<option value="15">2006</option>
+						<option value="16">2005</option>
+						<option value="17">2004</option>
+						<option value="18">2003</option>
+						<option value="19">2002</option>
+						<option value="20">2001</option>
+						<option value="21">2000</option>
+						<option value="22">1999</option>
+						<option value="23">1998</option>
+						<option value="24">1997</option>
+						<option value="25">1996</option>
+					</select>
+				</td>
+				<td>
+						<a href="" title="Подробнее" ><img src="sign.PNG" id="sign"></a>
+						<td>
+					</tr>
+					</table>
+				<div id="sex">
+					<label class="label">Пол</label>
+					<br>
+					<div class="sexchoice">
+						<input type="radio" value="1">
+						<label class="label">Женщина</label>
+						<input type="radio" value="2">
+						<label class="label">Мужщина</label>
+						<input type="radio" value="3">
+						<label class="label">Кек</label>
+						<a href="" title="Подробнее" ><img src="sign.PNG" id="sign"></a>
+					</div>
+					<div class="rights">
+						<p>Нажимая кнопку Регистрация, вы принимаете <a href="" class="linkrights">Условия</a>, <a href="" class="linkrights">Политику использования данных</a> и <a href="" class=linkrights>Политику в отношении файлов cookie</a>. Вы можете получать от нас SMS-уведомления, отказаться от которых можно в любой момент.</p>
+					</div>
+					<div>
+						<button class="regbutton">Регистрация</button>
+					</div>
+					<div>
+						<p class="createpage"><a id="crpage" href="">Создать Страницу</a> знаменитости, музыкальной группы или компании.</p>
+					</div>
+				</div>
+				</div>
+
+
+				</div>
+					
+			</div>
+		</form>
+		<p id="forgot"><a href="" id="qwe">Забыли аккаунт?</a></p>
+		<div class=imagepeople> 
+			<p>Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</p>
+			<img src="7XdR1KwCifL.png" class="imgg">
+		</div>
+			<div class="footer">
+				<div class="pagefooter">
+					<ul class="dif">
+						<li>Русский</li>
+						<li><a href="" class="dif">English(US)</a></li>
+						<li><a href="" class="dif">Türkçe</a></li>
+						<li><a href="" class="dif">Bahasa Indonesia</a></li>
+						<li><a href="" class="dif">中文(简体)</a></li>
+						<li><a href="" class="dif">Қазақша</a></li>
+						<li><a href="" class="dif">Deutsch</a></li>
+						<li><a href="" class="dif">한국어</a></li>
+						<li><a href="" class="dif">Shqip</a></li>
+						<li><a href="" class="dif">Español</a></li>
+						<li><a href="" class="dif">Português (Brasil)</a></li>
+						<li><button id="plus">+</button></li>
+					</ul>
+					<hr>
+					<ul class="dif">
+						<li><a href="" class="dif">Регистрация</a></li>
+						<li><a href="" class="dif">Вход</a></li>
+						<li><a href="" class="dif">Messenger</a></li>
+						<li><a href="" class="dif">Facebook Lite</a></li>
+						<li><a href="" class="dif">Watch</a></li>
+						<li><a href="" class="dif">Люди</a></li>
+						<li><a href="" class="dif">Страницы</a></li>
+						<li><a href="" class="dif">Категории страниц</a></li>
+						<li><a href="" class="dif">Места</a></li>
+						<li><a href="" class="dif">Игры</a></li>
+						<li><a href="" class="dif">Места</a></li>
+						<li><a href="" class="dif">Marketplace</a></li>
+						<li><a href="" class="dif">Группы</a></li>
+						<li><a href="" class="dif">Instagram</a></li>
+						<li><a href="" class="dif">Местные</a></li>
+						<li><a href="" class="dif">Благотворительные акции</a></li>
+						<li><a href="" class="dif">Услуги</a></li>
+						<li><a href="" class="dif">О нас</a></li>
+						<li><a href="" class="dif">Создать рекламу</a></li>
+						<li><a href="" class="dif">Создать страницу</a></li>
+						<li><a href="" class="dif">Разработчики</a></li>
+						<li><a href="" class="dif">Вакансии</a></li>
+						<li><a href="" class="dif">Конфидециальность</a></li>
+						<li><a href="" class="dif">Файлы cookie</a></li>
+						<li><a href="" class="dif">Выбор рекламы</a></li>
+						<li><a href="" class="dif">Условия использования</a></li>
+						<li><a href="" class="dif">Справка</a></li>
+					</ul>
+					<br>
+					<p id="faceb">Facebook © 2020</p>
+				</div>
+			</div>	
+	</body>
+</html>
